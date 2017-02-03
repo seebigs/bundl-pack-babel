@@ -6,7 +6,7 @@ var babel = require("babel-core");
 
 module.exports = function (options) {
     options = options || {};
-    options.presets = options.presets || [__dirname + '/node_modules/babel-preset-latest'];
+    options.presets = options.presets || ['latest'];
 
     return function (getProcessor, packOptions) {
 
