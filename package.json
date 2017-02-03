@@ -1,6 +1,6 @@
 {
   "name": "bundl-pack-babel",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Transpile next generation JavaScript into browser-readable bundles",
   "main": "index.js",
   "scripts": {
