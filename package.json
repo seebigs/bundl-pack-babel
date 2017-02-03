@@ -1,0 +1,25 @@
+{
+  "name": "bundl-pack-babel",
+  "version": "0.1.0",
+  "description": "Transpile next generation JavaScript into browser-readable bundles",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/automated"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seebigs/bundl-pack-babel.git"
+  },
+  "author": "Chris Bigelow <seebigswork@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seebigs/bundl-pack-babel/issues"
+  },
+  "devDependencies": {
+    "feather-test": "^1.1.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.22.1",
+    "babel-preset-latest": "^6.22.0"
+  }
+}
