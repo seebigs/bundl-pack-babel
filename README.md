@@ -26,5 +26,5 @@ var options = {
 bundl('entry.js')
     .then(pack({ js: babelProcessor(options) }))
     .then(write())
-    .all();
+    .go();
 ```
