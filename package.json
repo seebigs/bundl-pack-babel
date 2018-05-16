@@ -4,7 +4,7 @@
   "description": "Transpile next generation JavaScript into browser-readable bundles",
   "main": "index.js",
   "scripts": {
-    "test": "node test/automated"
+    "test": "node test"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
     "url": "https://github.com/seebigs/bundl-pack-babel/issues"
   },
   "devDependencies": {
-    "feather-test": "^1.1.0"
+    "feather-test": "^4.0.0"
   },
   "dependencies": {
     "babel-core": "^6.22.1",

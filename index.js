@@ -4,19 +4,17 @@
 
 var babel = require("babel-core");
 
-module.exports = function (options) {
+function babelProcessor(getProcessor, options) {
     options = options || {};
     options.presets = options.presets || ['latest'];
 
-    return function (getProcessor, packOptions) {
+    function processor (file) {
+        return babel.transform(file.contents, options).code;
+    }
 
-        function processor (file) {
-            return babel.transform(file.contents, options).code;
-        }
-
-        return {
-            processor: processor
-        };
+    return {
+        processor: processor
     };
+}
 
-};
+module.exports = babelProcessor;

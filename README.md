@@ -13,18 +13,19 @@ $ npm install --save-dev bundl-pack-babel
 ## Use
 
 ```js
-var bundl = require('bundl');
+var Bundl = require('bundl');
 var pack = require('bundl-pack');
 var write = require('bundl-write');
 
 var babelProcessor = require('bundl-pack-babel');
 
-var options = {
-    presets: ['es2015'] // uses "latest" if you do not specify
-};
-
-bundl('entry.js')
-    .then(pack({ js: babelProcessor(options) }))
+new Bundl('entry.js')
+    .then(pack({
+        js: {
+            processor: babelProcessor,
+            presets: ['es2015'] // uses "latest" if you do not specify
+        }
+    }))
     .then(write())
     .go();
 ```

@@ -1,5 +1,5 @@
 
-var babelProcessor = require('../../index.js')();
+var babelProcessor = require('../../index.js');
 
 describe('processor', function () {
 
